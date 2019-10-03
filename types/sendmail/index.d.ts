@@ -1,4 +1,4 @@
-// Type definitions for sendmail 1.4
+// Type definitions for sendmail 1.7
 // Project: https://github.com/guileen/node-sendmail
 // Definitions by: Saeid Ostad <https://github.com/saostad>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -28,6 +28,8 @@ declare namespace sendMailFactory {
         smtpPort?: number;
         /** Default: -1 - extra smtp host after resolveMX */
         smtpHost?: string | number;
+        /** Default: true - whether or not to reject self-signed TLS certificates */
+        rejectUnauthorized?: boolean;
     }
 
     interface MailInput {
