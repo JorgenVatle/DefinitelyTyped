@@ -30,6 +30,8 @@ declare namespace sendMailFactory {
         smtpHost?: string | number;
         /** Default: true - whether or not to reject self-signed TLS certificates */
         rejectUnauthorized?: boolean;
+        /** Default: false - whether or not to automatically send an EHLO request to the target SMTP server */
+        autoEHLO?: boolean;
     }
 
     interface MailInput {
